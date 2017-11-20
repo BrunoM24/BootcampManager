@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="489.0" prefWidth="668.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.academiadecodigo.registerexercise.controllers.BootcampDetailsController">
+   <children>
+      <TableView layoutX="28.0" layoutY="212.0" prefHeight="200.0" prefWidth="612.0">
+        <columns>
+          <TableColumn fx:id="nameField" minWidth="100.0" prefWidth="100.0" text="Name" />
+            <TableColumn fx:id="emailField" minWidth="100.0" prefWidth="100.0" text="Email" />
+          <TableColumn fx:id="phoneField" prefWidth="75.0" text="Phone" />
+            <TableColumn fx:id="cityField" prefWidth="75.0" text="City" />
+            <TableColumn fx:id="addressField" prefWidth="100.0" text="Address" />
+            <TableColumn fx:id="genderField" prefWidth="75.0" text="Gender" />
+            <TableColumn fx:id="BirthdayField" prefWidth="75.0" text="Birthday" />
+        </columns>
+      </TableView>
+      <Label layoutX="226.0" layoutY="37.0" text="Bootcamp">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Label>
+      <Label layoutX="226.0" layoutY="103.0" text="ID:" />
+      <Label layoutX="226.0" layoutY="127.0" text="Location:" />
+      <Label layoutX="226.0" layoutY="156.0" text="Start:" />
+      <Label layoutX="226.0" layoutY="182.0" text="End:" />
+      <Label fx:id="idLabel" layoutX="425.0" layoutY="103.0" text="#1" />
+      <Label fx:id="locationLabel" layoutX="398.0" layoutY="127.0" text="Lisbon" />
+      <Label fx:id="startLabel" layoutX="371.0" layoutY="156.0" text="11-09-2017" />
+      <Label fx:id="endLabel" layoutX="371.0" layoutY="182.0" text="15-12-2017" />
+   </children>
+</Pane>
